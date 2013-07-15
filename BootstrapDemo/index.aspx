@@ -392,7 +392,7 @@
 
       <!-- Three columns of text below the carousel -->
       <div class="row">
- <!--       <div class="span4">
+       <div class="span4">
           
           <h2>Heading</h2>
           <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
@@ -431,8 +431,8 @@
 
       <!-- FOOTER -->
       <footer>
-        <p class="pull-right"><a href="http://www.51aspx.com" target="_blank">51aspx.com</a></p>
-        <p>&copy; 2013 Company, Inc. &middot; <a href="#">51aspx</a> </p>
+        <p class="pull-right"><a href="http://www.ecnu.edu.cn" target="_blank">ECNU</a></p>
+        <p>&copy; 2013 Company, Inc. &middot; <a href="#">华东师范大学</a> </p>
       </footer>
 
     </div><!-- /.container -->
