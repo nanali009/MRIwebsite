@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="BootstrapDemo._default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="BootstrapDemo._default" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -45,9 +45,9 @@
     /* Remove border and change up box shadow for more contrast */
     .navbar .navbar-inner {
       border: 0;
-      -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
-         -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
-              box-shadow: 0 2px 10px rgba(0,0,0,.25);
+      -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.15);
+         -moz-box-shadow: 0 2px 10px rgba(0,0,0,.15);
+              box-shadow: 0 2px 10px rgba(0,0,0,.15);
     }
 
     /* Downsize the brand/project name a bit */
@@ -81,7 +81,9 @@
     .carousel .container {
       position: relative;
       z-index: 9;
-    }
+            top: 0px;
+            left: 0px;
+        }
 
     .carousel-control {
       height: 80px;
@@ -96,6 +98,12 @@
     .carousel .item {
       height: 500px;
     }
+    .carousel .smallItem
+    {
+        min-width: 50%;
+        height: 200px;
+    }
+
     .carousel img {
       position: absolute;
       top: 0;
@@ -188,6 +196,11 @@
 
       .carousel .item {
         height: 500px;
+        width: 500px;
+      }
+      .carousel .smallItem {
+        height: 200px;
+        width: 200px;
       }
       .carousel img {
         width: auto;
@@ -223,7 +236,14 @@
       }
       .carousel .item {
         height: 300px;
+        width: 300px;
       }
+      .carousel .smallItem {
+        height: 150px;
+        width: 150px;
+      }
+
+
       .carousel img {
         height: 300px;
       }
@@ -279,7 +299,7 @@
       <div class="container">
 
         <div class="navbar navbar-inverse">
-          <div class="navbar-inner">
+         <div class="navbar-inner">
             <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
             <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
               <span class="icon-bar"></span>
@@ -309,6 +329,11 @@
                   </ul>
                 </li>
               </ul>
+                  <form class="navbar-form pull-right">
+                    <input class="span2" type="text" placeholder="Email">
+                    <input class="span2" type="password" placeholder="Password">
+                    <button type="submit" class="btn">Sign in</button>
+                  </form>
             </div><!--/.nav-collapse -->
           </div><!-- /.navbar-inner -->
         </div><!-- /.navbar -->
@@ -367,13 +392,14 @@
 
       <!-- Three columns of text below the carousel -->
       <div class="row">
-        <div class="span4">
+ <!--       <div class="span4">
           
           <h2>Heading</h2>
           <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
           <p><a class="btn" href="#">View details &raquo;</a></p>
         </div><!-- /.span4 -->
-        <div class="span4">
+
+        <div class="span4"> 
          
           <h2>Heading</h2>
           <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
