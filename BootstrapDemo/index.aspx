@@ -329,10 +329,11 @@
                   </ul>
                 </li>
               </ul>
-                  <form class="navbar-form pull-right">
-                    <input class="span2" type="text" placeholder="Email">
-                    <input class="span2" type="password" placeholder="Password">
-                    <button type="submit" class="btn">Sign in</button>
+                  <form class="navbar-form pull-right" action="login.aspx" method="post">
+                    <input class="span2" type="text" name="email" placeholder="Email">
+                    <input class="span2" type="password" name="pw" placeholder="Password">
+    <!--             <button type="submit" class="btn">Sign in</button>-->    
+                    <input type="submit" value="Sign in" class="btn btn-primary">
                   </form>
             </div><!--/.nav-collapse -->
           </div><!-- /.navbar-inner -->
