@@ -11,8 +11,8 @@ namespace BootstrapDemo
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string returnURL = Request.QueryString["email"];
-            Response.Write(returnURL);
+            string email = Request.Form["email"];
+            Response.Write(email);
         }
     }
 }

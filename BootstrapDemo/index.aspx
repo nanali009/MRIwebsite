@@ -14,7 +14,7 @@
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
     <style>
 
-    /* GLOBAL STYLES
+   /* GLOBAL STYLES
     -------------------------------------------------- */
     /* Padding below the footer and lighter body text */
 
@@ -45,9 +45,9 @@
     /* Remove border and change up box shadow for more contrast */
     .navbar .navbar-inner {
       border: 0;
-      -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.15);
-         -moz-box-shadow: 0 2px 10px rgba(0,0,0,.15);
-              box-shadow: 0 2px 10px rgba(0,0,0,.15);
+      -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+         -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+              box-shadow: 0 2px 10px rgba(0,0,0,.25);
     }
 
     /* Downsize the brand/project name a bit */
@@ -81,9 +81,7 @@
     .carousel .container {
       position: relative;
       z-index: 9;
-            top: 0px;
-            left: 0px;
-        }
+    }
 
     .carousel-control {
       height: 80px;
@@ -98,12 +96,6 @@
     .carousel .item {
       height: 500px;
     }
-    .carousel .smallItem
-    {
-        min-width: 50%;
-        height: 200px;
-    }
-
     .carousel img {
       position: absolute;
       top: 0;
@@ -196,11 +188,6 @@
 
       .carousel .item {
         height: 500px;
-        width: 500px;
-      }
-      .carousel .smallItem {
-        height: 200px;
-        width: 200px;
       }
       .carousel img {
         width: auto;
@@ -236,14 +223,7 @@
       }
       .carousel .item {
         height: 300px;
-        width: 300px;
       }
-      .carousel .smallItem {
-        height: 150px;
-        width: 150px;
-      }
-
-
       .carousel img {
         height: 300px;
       }
@@ -317,7 +297,7 @@
                 <li><a href="#contact">联系我们</a></li>
                 <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
                 <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">下拉框 <b class="caret"></b></a>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">更多 <b class="caret"></b></a>
                   <ul class="dropdown-menu">
                     <li><a href="#">Action</a></li>
                     <li><a href="#">Another action</a></li>
