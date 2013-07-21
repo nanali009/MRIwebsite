@@ -167,6 +167,7 @@
     <Content Include="build\node_modules\hogan.js\web\stylesheets\layout.css" />
     <Content Include="build\node_modules\hogan.js\web\stylesheets\skeleton.css" />
     <Content Include="components.html" />
+    <Content Include="Contact.aspx" />
     <Content Include="customize.html" />
     <Content Include="index.aspx" />
     <Content Include="examples\carousel.html" />
@@ -193,6 +194,13 @@
     </Compile>
     <Compile Include="about.aspx.designer.cs">
       <DependentUpon>about.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
