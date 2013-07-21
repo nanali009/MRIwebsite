@@ -7,15 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace BootstrapDemo
 {
-    public partial class login : System.Web.UI.Page
+    public partial class about : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string email = Request.Form["email"];
-            Response.Write("email:" + email);
 
-            string pw = Request.Form["pw"];
-            Response.Write("Password:" + pw);
         }
     }
 }

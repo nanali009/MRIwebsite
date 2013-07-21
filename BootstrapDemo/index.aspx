@@ -309,11 +309,11 @@
                   </ul>
                 </li>
               </ul>
-                  <form class="navbar-form pull-right" action="login.aspx" method="post">
+                  <form name="LoginForm" class="navbar-form pull-right" action="login.aspx" method="post">
                     <input class="span2" type="text" name="email" placeholder="Email">
                     <input class="span2" type="password" name="pw" placeholder="Password">
     <!--             <button type="submit" class="btn">Sign in</button>-->    
-                    <input type="submit" value="Sign in" class="btn btn-primary">
+                    <input type="submit" value="Sign in" class="btn btn-primary" onclick="return emailCheck()">
                   </form>
             </div><!--/.nav-collapse -->
           </div><!-- /.navbar-inner -->
@@ -445,5 +445,21 @@
       }(window.jQuery)
     </script>
     <script src="assets/js/holder/holder.js"></script>
+    <script language="javascript">
+        function emailCheck()
+        {
+            var emailStr = document.all.LoginForm.email.value;
+            var emailPat = /^(.+)@(.+)$/;
+            var matchArray = emailStr.match(emailPat);
+            if (matchArray == null)
+            {
+                alert(emailStr + "电子邮件地址错误!")
+                $(".alert").alert('close')
+                return false;
+            }
+            else
+                return true;
+        }
+</script>
   </body>
 </html>
